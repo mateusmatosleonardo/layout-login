@@ -1,12 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { 
+  StyleSheet,
+   Text, 
+   View,
+   ImageBackground
+} from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
+      <ImageBackground
+        source={require('./assets/bg.jpg')}
+        style={styles.background}
+      >
+
+      </ImageBackground>
     </View>
   );
 }
@@ -18,4 +28,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  background: {
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
 });
