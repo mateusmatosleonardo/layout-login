@@ -16,7 +16,15 @@ export default function App() {
         style={styles.background}
       >
         <View style={styles.loginContainer}>
-
+          <Text
+            style={{
+              fontSize: 24,
+              fontWeight: '700',
+              padding: 30
+            }}
+          >
+            Login
+          </Text>
         </View>
       </ImageBackground>
     </View>
