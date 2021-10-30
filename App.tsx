@@ -7,6 +7,8 @@ import {
    ImageBackground,
    TextInput
 } from 'react-native';
+import Button from './src/components/Button';
+
 
 export default function App() {
   return (
@@ -34,6 +36,7 @@ export default function App() {
             placeholder="Senha"
             style={styles.input}
           />
+          <Button/>
         </View>
       </ImageBackground>
     </View>
@@ -69,5 +72,8 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     paddingLeft: 10,
     marginBottom: 30
+  },
+  button: {
+    width: 300
   }
 });
