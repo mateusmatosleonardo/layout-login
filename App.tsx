@@ -5,7 +5,8 @@ import {
    Text, 
    View,
    ImageBackground,
-   TextInput
+   TextInput,
+   TouchableOpacity
 } from 'react-native';
 import Button from './src/components/Button';
 
@@ -37,6 +38,19 @@ export default function App() {
             style={styles.input}
           />
           <Button/>
+          <TouchableOpacity
+          >
+            <Text
+              style={{
+                fontSize: 12,
+                marginTop: 3,
+                textDecorationLine: 'underline',
+                color: '#222'
+              }}
+              >
+                Cadastre-se!
+            </Text>
+          </TouchableOpacity>
         </View>
       </ImageBackground>
     </View>
@@ -72,8 +86,5 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     paddingLeft: 10,
     marginBottom: 30
-  },
-  button: {
-    width: 300
   }
 });
