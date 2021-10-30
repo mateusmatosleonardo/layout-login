@@ -7,9 +7,9 @@ import {
 
 const Button = () => {
     return (
-       <TouchableOpacity>
+       <TouchableOpacity style={styles.buttonSend}>
            <Text
-            style={{fontSize: 18, color: '#fafafa'}}
+            style={{fontSize: 18, color: '#222'}}
            >
                Enviar
            </Text>
@@ -21,6 +21,13 @@ export default Button;
 
 const styles = StyleSheet.create({
     buttonSend: {
-        
+        width: 200,
+        height: 50,
+        borderRadius: 10,
+        backgroundColor: '#fff',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 5
     }
 });
