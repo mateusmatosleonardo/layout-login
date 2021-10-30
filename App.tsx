@@ -15,7 +15,9 @@ export default function App() {
         source={require('./assets/bg.jpg')}
         style={styles.background}
       >
+        <View style={styles.loginContainer}>
 
+        </View>
       </ImageBackground>
     </View>
   );
@@ -34,5 +36,13 @@ const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  loginContainer: {
+    width: 350,
+    height: 400,
+    display: 'flex',
+    alignItems: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    borderRadius: 20
   }
 });
