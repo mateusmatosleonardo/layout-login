@@ -4,7 +4,8 @@ import {
   StyleSheet,
    Text, 
    View,
-   ImageBackground
+   ImageBackground,
+   TextInput
 } from 'react-native';
 
 export default function App() {
@@ -25,6 +26,14 @@ export default function App() {
           >
             Login
           </Text>
+          <TextInput
+            placeholder="Usuário"
+            style={styles.input}
+          />
+          <TextInput
+            placeholder="Senha"
+            style={styles.input}
+          />
         </View>
       </ImageBackground>
     </View>
@@ -52,5 +61,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'rgba(255, 255, 255, 0.2)',
     borderRadius: 20
+  },
+  input: {
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    width: 300,
+    height: 60,
+    borderRadius: 12,
+    paddingLeft: 10,
+    marginBottom: 30
   }
 });
