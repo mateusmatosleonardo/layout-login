@@ -5,7 +5,8 @@ import {
    Text, 
    View,
    ImageBackground,
-   TextInput
+   TextInput,
+   Button
 } from 'react-native';
 
 export default function App() {
@@ -33,6 +34,13 @@ export default function App() {
           <TextInput
             placeholder="Senha"
             style={styles.input}
+          />
+
+          <Button
+          onPress={() => alert('logado com sucesso!')}
+            title="Enviar"
+            color="#841584"
+            accessibilityLabel="Learn more about this purple button"
           />
         </View>
       </ImageBackground>
